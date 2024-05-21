@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watermark LSB</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Watermark LSB Application</h1>
+      <div class="container">
+        <h2>Embed Watermark</h2>
+        <h3>Pilih Foto</h3>
+        <input type="file" id="imageUpload" accept="image/*" />
+        <h3>Pilih Watermark</h3>
+        <input type="file" id="watermarkUpload" accept="image/*" />
+        <button onclick="embedWatermark()">Embed Watermark</button>
+        <canvas id="resultCanvas"></canvas>
+        <a id="downloadLink" style="display: none">Download Image</a>
+      </div>
+      <div class="container">
+        <h2>Extract Watermark</h2>
+        <h3>Pilih foto</h3>
+        <input type="file" id="watermarkedImageUpload" accept="image/*" />
+        <button onclick="extractWatermark()">Extract Watermark</button>
+        <canvas id="extractedCanvas"></canvas>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
